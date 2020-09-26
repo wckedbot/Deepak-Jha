@@ -1,0 +1,67 @@
+.header {
+    &__socialmediaicons {
+        position: fixed;
+        top: 60%;
+        -webkit-transform: translateY(-40%);
+        -ms-transform: translateY(-40%);
+        transform: translateY(-40%);
+
+        & a {
+            display: block;
+            text-align: center;
+            padding: 1.6rem;
+            transition: all .3s ease-in;
+        }
+    }
+
+    &__line {
+        border-left: 2px solid $icon-color;
+        position: fixed;
+        height: 12rem;
+        margin-left: 2.3rem;
+        margin-top: 3rem;
+    }
+}
+
+.fab {
+    color: $icon-color;
+    transition: all .1s ease-in;
+
+    &:hover {
+        color: $icon-hover-color;
+        transform: translateY(-3px);
+    }
+}
+
+.fas {
+    color: $icon-color;
+    transition: all .1s ease-in;
+
+    &:hover {
+        color: $icon-hover-color;
+        transform: translateY(-3px);
+    }
+
+}
+
+.fa-facebook {
+    font-size: $icon-font-size;
+}
+
+.fa-github {
+    font-size: $icon-font-size;
+}
+
+.fa-linkedin {
+
+    font-size: $icon-font-size;
+}
+
+.fa-instagram {
+
+    font-size: $icon-font-size;
+}
+
+.fa-envelope {
+    font-size: $icon-font-size;
+}

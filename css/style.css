@@ -1,0 +1,128 @@
+.header {
+  position: relative;
+  height: 100vh;
+  font-family: 'Lato', sans-serif; }
+  .header__text-box {
+    position: absolute;
+    top: 25%;
+    left: 15%; }
+
+.projects {
+  background: linear-gradient(to right bottom, #07203f, #050f1c);
+  position: relative;
+  height: 100vh; }
+
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Lato', sans-serif; }
+  .header__navbar-ul {
+    list-style: none;
+    display: flex; }
+    .header__navbar-ul a {
+      padding: 1.2rem;
+      color: aliceblue;
+      letter-spacing: .30rem;
+      font-size: 1.6rem;
+      transition: all .2s; }
+      .header__navbar-ul a:hover {
+        color: cyan; }
+
+.header__logo {
+  margin: 0 0 0 .45em; }
+  .header__logo a {
+    text-decoration: none;
+    letter-spacing: .45rem;
+    color: cyan;
+    font-size: 1.6rem; }
+
+.header__socialmediaicons {
+  position: fixed;
+  top: 60%;
+  -webkit-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%); }
+  .header__socialmediaicons a {
+    display: block;
+    text-align: center;
+    padding: 1.6rem;
+    transition: all .3s ease-in; }
+
+.header__line {
+  border-left: 2px solid #a8b2d1;
+  position: fixed;
+  height: 12rem;
+  margin-left: 2.3rem;
+  margin-top: 3rem; }
+
+.fab {
+  color: #a8b2d1;
+  transition: all .1s ease-in; }
+  .fab:hover {
+    color: cyan;
+    transform: translateY(-3px); }
+
+.fas {
+  color: #a8b2d1;
+  transition: all .1s ease-in; }
+  .fas:hover {
+    color: cyan;
+    transform: translateY(-3px); }
+
+.fa-facebook {
+  font-size: 2.3rem; }
+
+.fa-github {
+  font-size: 2.3rem; }
+
+.fa-linkedin {
+  font-size: 2.3rem; }
+
+.fa-instagram {
+  font-size: 2.3rem; }
+
+.fa-envelope {
+  font-size: 2.3rem; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 3rem; }
+
+.heading-primary {
+  color: aliceblue; }
+  .heading-primary--main {
+    display: block;
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: cyan; }
+  .heading-primary--sub-1 {
+    display: block;
+    font-size: 6rem;
+    font-weight: 600;
+    opacity: .9; }
+  .heading-primary--sub-2 {
+    display: block;
+    font-size: 6rem;
+    font-weight: 600;
+    opacity: .8; }
+
+li a {
+  color: aliceblue;
+  text-decoration: none; }
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background-image: linear-gradient(to right bottom, #0a192f, #041e36); }
