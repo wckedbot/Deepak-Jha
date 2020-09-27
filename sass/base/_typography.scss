@@ -36,3 +36,78 @@ li a {
     color: aliceblue;
     text-decoration: none;
 }
+
+.section-about {
+
+    &-Intro {
+        color: white;
+        font-size: 3.3rem;
+        color: $primary-text-color;
+        top: -10rem;
+    }
+}
+
+.paragraph {
+    font-family: "Lato",
+        sans-serif;
+    font-size: 1.8rem;
+    color: aliceblue;
+    opacity: .8;
+    padding-bottom: 5rem;
+    font-weight: 600;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+.col-1-of-2 {
+    &-heading {
+
+        &-1 {
+            color: $primary-text-color;
+            font-size: 2.3rem;
+
+            &:after {
+                content: "";
+                /* This is necessary for the pseudo element to work. */
+                display: block;
+                /* This will put the pseudo element on its own line. */
+                margin: 0 1px;
+                /* This will center the border. */
+                width: 15%;
+                /* Change this to whatever width you want. */
+                border-bottom: 2px solid grey;
+                /* This creates the border. Replace black with whatever color you want. */
+            }
+        }
+
+        &-2 {
+            color: $primary-text-color;
+            font-size: 2.3rem;
+            //margin-left: 2rem;
+
+            &:after {
+                content: "";
+                /* This is necessary for the pseudo element to work. */
+                display: block;
+                /* This will put the pseudo element on its own line. */
+                margin: 0 1px;
+                /* This will center the border. */
+                width: 20%;
+                /* Change this to whatever width you want. */
+                border-bottom: 2px solid grey;
+                /* This creates the border. Replace black with whatever color you want. */
+            }
+        }
+
+
+
+    }
+
+    &-sub {
+        color: aliceblue;
+        opacity: .8;
+        font-size: 2.3rem;
+    }
+}

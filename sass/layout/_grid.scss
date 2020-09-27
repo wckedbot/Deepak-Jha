@@ -1,0 +1,8 @@
+.row {
+    display: inline-grid;
+    //width: 100vw;
+    grid-template-columns: auto;
+    grid-template-rows: inherit;
+    grid-gap: 0;
+
+}

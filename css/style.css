@@ -13,6 +13,12 @@
   position: relative;
   height: 100vh; }
 
+.row {
+  display: inline-grid;
+  grid-template-columns: auto;
+  grid-template-rows: inherit;
+  grid-gap: 0; }
+
 .header__navbar {
   display: flex;
   justify-content: space-between;
@@ -85,6 +91,10 @@
 
 .fa-envelope {
   font-size: 2.3rem; }
+
+.section-about {
+  max-width: 100rem;
+  margin: 0 auto; }
 
 @keyframes mainBlock {
   0% {
@@ -195,6 +205,57 @@ body {
 li a {
   color: aliceblue;
   text-decoration: none; }
+
+.section-about-Intro {
+  color: white;
+  font-size: 3.3rem;
+  color: #19f6e8;
+  top: -10rem; }
+
+.paragraph {
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  color: aliceblue;
+  opacity: .8;
+  padding-bottom: 5rem;
+  font-weight: 600; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.col-1-of-2-heading-1 {
+  color: #19f6e8;
+  font-size: 2.3rem; }
+  .col-1-of-2-heading-1:after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 1px;
+    /* This will center the border. */
+    width: 15%;
+    /* Change this to whatever width you want. */
+    border-bottom: 2px solid grey;
+    /* This creates the border. Replace black with whatever color you want. */ }
+
+.col-1-of-2-heading-2 {
+  color: #19f6e8;
+  font-size: 2.3rem; }
+  .col-1-of-2-heading-2:after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 1px;
+    /* This will center the border. */
+    width: 20%;
+    /* Change this to whatever width you want. */
+    border-bottom: 2px solid grey;
+    /* This creates the border. Replace black with whatever color you want. */ }
+
+.col-1-of-2-sub {
+  color: aliceblue;
+  opacity: .8;
+  font-size: 2.3rem; }
 
 *,
 *::after,
