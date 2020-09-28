@@ -1,8 +1,14 @@
 .row {
-    display: inline-grid;
-    //width: 100vw;
+    display: grid;
     grid-template-columns: auto;
     grid-template-rows: inherit;
     grid-gap: 0;
+}
 
+.col-1-of-2 {
+    height: 50rem;
+    width: 40rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }

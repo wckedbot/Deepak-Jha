@@ -14,10 +14,17 @@
   height: 100vh; }
 
 .row {
-  display: inline-grid;
+  display: grid;
   grid-template-columns: auto;
   grid-template-rows: inherit;
   grid-gap: 0; }
+
+.col-1-of-2 {
+  height: 50rem;
+  width: 40rem;
+  position: relative;
+  display: flex;
+  flex-direction: column; }
 
 .header__navbar {
   display: flex;
@@ -92,7 +99,22 @@
 .fa-envelope {
   font-size: 2.3rem; }
 
+.section-projects {
+  padding: 0; }
+
 .section-about {
+  max-width: 100rem;
+  margin: 0 auto;
+  display: grid; }
+  .section-about-textbox-about {
+    padding-bottom: 20rem; }
+  .section-about-textbox-experience {
+    justify-self: right;
+    padding-bottom: 5rem; }
+  .section-about-heading {
+    padding-bottom: 2rem; }
+
+.section-projects {
   max-width: 100rem;
   margin: 0 auto; }
 
@@ -179,7 +201,7 @@
     bottom: 0px; } }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   padding: 3rem; }
@@ -195,67 +217,62 @@ body {
     display: block;
     font-size: 6rem;
     font-weight: 600;
-    opacity: .9; }
+    opacity: 0.9; }
   .heading-primary--sub-2 {
     display: block;
     font-size: 6rem;
     font-weight: 600;
-    opacity: .8; }
+    opacity: 0.8; }
 
 li a {
   color: aliceblue;
   text-decoration: none; }
 
-.section-about-Intro {
-  color: white;
+.name {
+  color: #19f6e8; }
+
+.section-about-heading-1 {
+  color: aliceblue;
   font-size: 3.3rem;
-  color: #19f6e8;
-  top: -10rem; }
-
-.paragraph {
-  font-family: "Lato", sans-serif;
-  font-size: 1.8rem;
-  color: aliceblue;
   opacity: .8;
-  padding-bottom: 5rem;
-  font-weight: 600; }
-  .paragraph:not(:last-child) {
-    margin-bottom: 3rem; }
-
-.col-1-of-2-heading-1 {
-  color: #19f6e8;
-  font-size: 2.3rem; }
-  .col-1-of-2-heading-1:after {
+  margin-bottom: 2rem; }
+  .section-about-heading-1:after {
     content: "";
     /* This is necessary for the pseudo element to work. */
     display: block;
     /* This will put the pseudo element on its own line. */
-    margin: 0 1px;
-    /* This will center the border. */
-    width: 15%;
-    /* Change this to whatever width you want. */
-    border-bottom: 2px solid grey;
-    /* This creates the border. Replace black with whatever color you want. */ }
-
-.col-1-of-2-heading-2 {
-  color: #19f6e8;
-  font-size: 2.3rem; }
-  .col-1-of-2-heading-2:after {
-    content: "";
-    /* This is necessary for the pseudo element to work. */
-    display: block;
-    /* This will put the pseudo element on its own line. */
-    margin: 0 1px;
-    /* This will center the border. */
     width: 20%;
-    /* Change this to whatever width you want. */
-    border-bottom: 2px solid grey;
-    /* This creates the border. Replace black with whatever color you want. */ }
+    /* This creates some space between the element and the border. */
+    border-bottom: 1px solid grey; }
 
-.col-1-of-2-sub {
+.section-about-heading-2 {
+  color: aliceblue;
+  font-size: 3.3rem;
+  opacity: .8;
+  margin-bottom: 2rem; }
+  .section-about-heading-2:after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    width: 40%;
+    /* This creates some space between the element and the border. */
+    border-bottom: 1px solid grey; }
+
+.section-about-sub-heading-1 {
+  color: aliceblue;
+  font-size: 2rem;
+  opacity: .9; }
+
+.section-about-sub-heading {
+  color: #19f6e8;
+  font-size: 3rem;
+  opacity: .8; }
+
+.section-projects-heading {
   color: aliceblue;
   opacity: .8;
-  font-size: 2.3rem; }
+  font-size: 3.3rem; }
 
 *,
 *::after,
@@ -265,7 +282,8 @@ li a {
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow-x: hidden; }
 
 body {
   box-sizing: border-box;

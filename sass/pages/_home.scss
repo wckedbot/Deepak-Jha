@@ -1,26 +1,28 @@
 .section-about {
     max-width: 100rem;
     margin: 0 auto;
-    //padding-left: 15rem;
-
-    // &-textbox {
-    //     position: absolute;
-    //     top: 0;
-    //     left: 15%;
+    display: grid;
+    //flex-direction: column;
+    //justify-content: center;
 
 
-    //     &:after {
-    //         content: "";
-    //         /* This is necessary for the pseudo element to work. */
-    //         display: block;
-    //         /* This will put the pseudo element on its own line. */
-    //         margin: 0 1px;
-    //         /* This will center the border. */
-    //         width: 60%;
-    //         /* Change this to whatever width you want. */
-    //         border-bottom: 2px solid grey;
-    //         /* This creates the border. Replace black with whatever color you want. */
-    //     }
-    // }
+    &-textbox {
+        &-about {
+            padding-bottom: 20rem;
+        }
 
+        &-experience {
+            justify-self: right;
+            padding-bottom: 5rem;
+        }
+    }
+
+    &-heading {
+        padding-bottom: 2rem;
+    }
+}
+
+.section-projects {
+    max-width: 100rem;
+    margin: 0 auto;
 }
