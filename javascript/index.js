@@ -32,6 +32,7 @@ if ($(window).width() > 800) {
                 $('.projects__item').removeClass('active');
             });
 
+
         });
 
     });
@@ -40,11 +41,11 @@ if ($(window).width() > 800) {
 
 var swiper = new Swiper('.projects-slider', {
     effect: 'coverflow',
-    grabCursor: false,
+    grabCursor: true,
     loop: false,
     centeredSlides: true,
     keyboard: true,
-    spaceBetween: 0,
+    spaceBetween: 10,
     slidesPerView: 'auto',
     speed: 300,
     coverflowEffect: {

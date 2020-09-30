@@ -8,16 +8,16 @@
 }
 
 
+
 .item-bg {
     width: 3rem;
     height: 5rem;
-    position: fixed;
+    position: absolute;
     top: 3rem;
-    background: rgba(10, 25, 47, .8);
     box-shadow: 0 6px 2.6rem 6px rgba(0, 0, 0, .25);
     opacity: 0;
     transition: all .3s;
-    left: -3rem;
+    left: 10rem;
 
     &.active {
         left: 0;
@@ -147,6 +147,7 @@
         color: #fff;
         border-radius: 1rem;
         display: block;
+        background: rgba(10, 25, 47, .8);
         transition: all .3s;
 
         @media screen and (min-width: 800px) {
@@ -218,6 +219,7 @@
         font-size: 1.6rem;
         font-weight: 500;
         opacity: .8;
+
         color: aliceblue;
         margin: 1rem 0;
         transition: opacity .3s;
