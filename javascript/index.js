@@ -40,7 +40,7 @@ if ($(window).width() > 800) {
 
 var swiper = new Swiper('.projects-slider', {
     effect: 'coverflow',
-    grabCursor: true,
+    grabCursor: false,
     loop: false,
     centeredSlides: true,
     keyboard: true,
