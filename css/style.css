@@ -26,6 +26,26 @@
   display: flex;
   flex-direction: column; }
 
+.section-contact-me {
+  position: relative;
+  margin: 0 auto;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .section-contact-me-title {
+    color: #19f6e8;
+    opacity: .9;
+    font-size: 3.3rem; }
+  .section-contact-me-header {
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    font-size: 5.3rem;
+    opacity: .8; }
+
 .header__navbar {
   display: flex;
   justify-content: space-between;
